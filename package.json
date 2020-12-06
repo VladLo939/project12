@@ -1,0 +1,29 @@
+{
+  "name": "project12",
+  "version": "0.0.1",
+  "description": "node js learning",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladLo939/project12.git"
+  },
+  "author": "Vlad Lobachev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladLo939/project12/issues"
+  },
+  "homepage": "https://github.com/VladLo939/project12#readme",
+  "devDependencies": {
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1",
+    "nodemon": "^2.0.6"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
