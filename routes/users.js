@@ -9,7 +9,7 @@ userRouter.get('/users', (req, res) => {
       res.status(200).json(users);
     })
     .catch(() => {
-      res.status(404).json({ message: 'Ошибка при чтении' });
+      res.status(500).json({ message: 'Ошибка при чтении' });
     });
 });
 
@@ -22,7 +22,7 @@ userRouter.get('/users/:id', (req, res) => {
       if (user) {
         res.send(user);
       } else {
-        res.status(404).send({ message: 'Нет пользователя с таким id' });
+        res.status(500).send({ message: 'Нет пользователя с таким id' });
       }
     }).catch(() => {
       res.status(500).json({ error: 'На сервере произошла ошибка' });

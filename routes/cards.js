@@ -7,7 +7,7 @@ cardRouter.get('/cards', (req, res) => {
       const resData = JSON.parse(data);
       res.status(200).json(resData);
     }).catch(() => {
-      res.status(404).json({ message: 'Ошибка при чтении' });
+      res.status(500).json({ message: 'Ошибка при чтении' });
     });
 });
 
